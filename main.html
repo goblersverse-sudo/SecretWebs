@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>.... -... -..</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="intro" id="intro">
+    <button class="btn" id="startBtn">click me</button>
+  </div>
+
+  <main class="stage hidden" id="stage" role="main">
+    <h1 class="name" id="personName">Eisya</h1>
+
+  <div class="cake">
+      <!-- top layer with swirls, sprinkles and candles -->
+      <div class="top">
+        <div class="swirls" aria-hidden="true">
+          <div class="swirl"></div>
+          <div class="swirl"></div>
+          <div class="swirl"></div>
+        </div>
+
+        <div class="candles" aria-hidden="true">
+          <div class="candle stripes"></div>
+          <div class="candle"></div>
+          <div class="candle stripes"></div>
+        </div>
+
+        <!-- decorative sprinkles on top -->
+        <div class="sprinkle"></div>
+        <div class="sprinkle"></div>
+        <div class="sprinkle"></div>
+        <div class="sprinkle"></div>
+        <div class="sprinkle"></div>
+        <div class="sprinkle"></div>
+        <div class="sprinkle"></div>
+        <div class="sprinkle"></div>
+        <div class="sprinkle"></div>
+      </div>
+
+      <!-- 3 cake layers -->
+      <div class="layer">
+        <div class="frost"></div>
+      </div>
+      <div class="layer">
+        <div class="frost"></div>
+      </div>
+      <div class="layer">
+        <div class="frost"></div>
+      </div>
+    </div>
+
+      <div>
+        <button class="envelope" id="envelopeBtn" title="Open the secret letter">
+          <div class="icon">📩</div>
+          <small>open letter</small>
+        </button>
+      </div>
+
+      <p class="greeting" id="greeting"></p>
+
+    </div>
+
+    <audio id="track" src="" preload="auto"></audio>
+  </main>
+
+  <div class="letter-modal" id="letterModal">
+    <div class="letter-card">
+      <h2>Dear Eisya,</h2>
+      <p id="letterContent"></p>
+      <button class="close-btn" id="closeLetter">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
